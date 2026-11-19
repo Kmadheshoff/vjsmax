@@ -155,12 +155,12 @@ export function HeroAutoSlider({
 
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2.5">
-                    <div className="h-6 w-6 overflow-hidden rounded-full ring-1 ring-yellow-500/80 shrink-0 bg-white dark:bg-[#17130B]">
+                    <div className="h-7 w-7 overflow-hidden rounded-full ring-1 ring-yellow-500/80 shrink-0 bg-white p-0.5">
                       <SafeImage
                         src={VJ_SIDDHU_LOGO_URL}
                         fallbackSrc={currentSlide.fallbackImage}
-                        alt="VJ Siddhu Vlogs"
-                        className="h-full w-full object-cover"
+                        alt="VJ Siddhu Max Logo"
+                        className="h-full w-full object-contain"
                       />
                     </div>
                     <span className="text-xs font-bold tracking-wide text-amber-700 dark:text-yellow-400 truncate">

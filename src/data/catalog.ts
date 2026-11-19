@@ -4,7 +4,7 @@ import { CategoryCircleItem, VideoItem } from '../types/ott';
 export const HERO_BACKDROP_IMAGE =
   '/src/assets/images/hero_purple_backdrop_1795023079425.jpg';
 export const VJ_SIDDHU_LOGO_URL =
-  'https://yt3.googleusercontent.com/Ep1bqaU3J0HcdsmrLoHivkN265srA7Mdvj9Dq0hcTyCcXiDDLxpegWxnCRuFnKIQiSvX4iqv2g=s900-c-k-c0x00ffffff-no-rj';
+  '/assets/aistudio/image_de4dfb35-4bce-4255-b932-212ed9199300_b5581ea8.png';
 
 const ART_VLOGS = '/src/assets/images/category_vlogs_1795021950439.jpg';
 const ART_MOTTAMAADI = '/src/assets/images/category_mottamaadi_1795021950958.jpg';

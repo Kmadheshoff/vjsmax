@@ -62,18 +62,18 @@ export function Navbar({
       }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-8 px-4 py-3 sm:px-8">
-        {/* Zone 1: VJS Max with Official VJ Siddhu Vlogs Logo */}
+        {/* Zone 1: VJS Max with Uploaded VJ Siddhu Max Logo */}
         <button
           type="button"
           onClick={() => onSelectNav('home')}
           className="group inline-flex items-center gap-2.5 font-display text-xl font-extrabold tracking-tight text-[#1A1404] dark:text-[#FEF9E7] whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-md"
         >
-          <span className="h-8 w-8 overflow-hidden rounded-full ring-2 ring-yellow-400 bg-white dark:bg-[#17130B] shrink-0 shadow-sm transition-transform duration-200 group-hover:scale-105">
+          <span className="h-10 w-10 sm:h-11 sm:w-11 overflow-hidden rounded-full ring-2 ring-yellow-400 bg-white p-1 shrink-0 shadow-sm transition-transform duration-200 group-hover:scale-105">
             <SafeImage
               src={VJ_SIDDHU_LOGO_URL}
-              fallbackSrc="/src/assets/images/hero_purple_backdrop_1795023079425.jpg"
-              alt="VJ Siddhu Vlogs"
-              className="h-full w-full object-cover"
+              fallbackSrc="/pwa-192x192.png"
+              alt="VJ Siddhu Max Logo"
+              className="h-full w-full object-contain"
             />
           </span>
           <span>

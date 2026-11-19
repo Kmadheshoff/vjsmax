@@ -13,11 +13,13 @@ export default defineConfig(() => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: [
-          'icon.svg',
+          'favicon-32x32.png',
+          'favicon-circle.png',
           'apple-touch-icon.png',
           'pwa-192x192.png',
           'pwa-512x512.png',
           'pwa-maskable-512x512.png',
+          'assets/aistudio/image_de4dfb35-4bce-4255-b932-212ed9199300_b5581ea8.png',
         ],
         manifest: {
           id: '/',
@@ -26,7 +28,7 @@ export default defineConfig(() => {
           description:
             'Fan-Made OTT for VJ Siddhu Vlogs. Stream 340+ episodes, Mottamaadi Party, Virundhu & travel series.',
           theme_color: '#FACC15',
-          background_color: '#FFFDF7',
+          background_color: '#FFFFFF',
           display: 'standalone',
           orientation: 'portrait-primary',
           start_url: '/',

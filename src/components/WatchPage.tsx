@@ -179,12 +179,12 @@ export function WatchPage({
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-2.5">
-              <div className="h-8 w-8 overflow-hidden rounded-full shrink-0 ring-1 ring-amber-200 dark:ring-yellow-400/25 bg-white dark:bg-[#17130B]">
+              <div className="h-9 w-9 overflow-hidden rounded-full shrink-0 ring-1 ring-amber-300 dark:ring-yellow-400/40 bg-white p-0.5">
                 <SafeImage
                   src={VJ_SIDDHU_LOGO_URL}
                   fallbackSrc={video.fallbackImage}
-                  alt="VJ Siddhu Vlogs"
-                  className="h-full w-full object-cover"
+                  alt="VJ Siddhu Max Logo"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-[#5C4D24] dark:text-[#B8A77A] tabular-nums">

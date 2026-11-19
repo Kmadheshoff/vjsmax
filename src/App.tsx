@@ -7,6 +7,7 @@ import {
   normalizeYouTubeVideo,
   RawYouTubeRecord,
   SERIES_LIST,
+  VJ_SIDDHU_LOGO_URL,
 } from './data/catalog';
 import { CategoryKey, PageKey, VideoItem } from './types/ott';
 import { Navbar } from './components/Navbar';
@@ -23,6 +24,7 @@ import { WatchPage } from './components/WatchPage';
 import { SplashScreen } from './components/SplashScreen';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { OfflineIndicator } from './components/OfflineIndicator';
+import { SafeImage } from './components/SafeImage';
 
 const WATCHLIST_STORAGE_KEY = 'vjs_max_watchlist_v1';
 const HISTORY_STORAGE_KEY = 'vjs_max_history_v1';
@@ -548,13 +550,23 @@ export default function App() {
       {/* Quiet OTT Footer with Bottom Nav Clearance */}
       <footer className="mt-10 border-t border-amber-200/80 dark:border-yellow-400/15 bg-white dark:bg-[#120F09] pb-24 sm:pb-24">
         <div className="mx-auto flex max-w-[1600px] flex-col gap-6 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <div>
-            <p className="font-display text-lg font-extrabold tracking-tight text-[#1A1404] dark:text-[#FEF9E7]">
-              VJS <span className="text-amber-600 dark:text-yellow-400">Max</span>
-            </p>
-            <p className="mt-1 text-xs text-[#5C4D24] dark:text-[#B8A77A]">
-              Fan-Made OTT for VJ Siddhu Vlogs · {videos.length}+ episodes streaming live via YouTube embeds.
-            </p>
+          <div className="flex items-center gap-3">
+            <span className="h-11 w-11 overflow-hidden rounded-full ring-2 ring-yellow-400 bg-white p-1 shrink-0 shadow-sm">
+              <SafeImage
+                src={VJ_SIDDHU_LOGO_URL}
+                fallbackSrc="/pwa-192x192.png"
+                alt="VJ Siddhu Max logo"
+                className="h-full w-full object-contain"
+              />
+            </span>
+            <div>
+              <p className="font-display text-lg font-extrabold tracking-tight text-[#1A1404] dark:text-[#FEF9E7]">
+                VJ Siddhu <span className="text-amber-600 dark:text-yellow-400">Vlogs</span>
+              </p>
+              <p className="mt-0.5 text-xs text-[#5C4D24] dark:text-[#B8A77A]">
+                VJS Max Fan-Made OTT · {videos.length}+ episodes streaming live via YouTube embeds.
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-5 text-xs font-medium text-[#5C4D24] dark:text-[#B8A77A]">

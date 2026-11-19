@@ -118,12 +118,12 @@ export function CategoryShowcasePage({
           <div className="flex flex-wrap items-center justify-between gap-5">
             <div className="flex items-center gap-4">
               <div className="h-14 w-14 overflow-hidden rounded-full bg-gradient-to-tr from-yellow-400 via-amber-400 to-yellow-300 p-[2.5px] shrink-0 shadow-md">
-                <div className="h-full w-full overflow-hidden rounded-full bg-white dark:bg-[#17130B]">
+                <div className="h-full w-full overflow-hidden rounded-full bg-white p-1.5">
                   <SafeImage
                     src={VJ_SIDDHU_LOGO_URL}
                     fallbackSrc={spotlight?.fallbackImage}
-                    alt="VJ Siddhu Vlogs"
-                    className="h-full w-full object-cover"
+                    alt="VJ Siddhu Max Logo"
+                    className="h-full w-full object-contain"
                   />
                 </div>
               </div>

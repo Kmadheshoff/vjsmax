@@ -90,12 +90,12 @@ export function CircleCategories({
                   </div>
 
                   {cat.id !== 'all' && (
-                    <div className="absolute -bottom-0.5 -right-0.5 h-8 w-8 overflow-hidden rounded-full ring-2 ring-[#FFFDF7] dark:ring-[#0D0B07] bg-white dark:bg-[#17130B] shadow-md">
+                    <div className="absolute -bottom-0.5 -right-0.5 h-8 w-8 overflow-hidden rounded-full ring-2 ring-[#FFFDF7] dark:ring-[#0D0B07] bg-white p-0.5 shadow-md">
                       <SafeImage
                         src={VJ_SIDDHU_LOGO_URL}
                         fallbackSrc={cat.fallbackImage}
-                        alt="VJ Siddhu Vlogs logo"
-                        className="h-full w-full object-cover"
+                        alt="VJ Siddhu Max logo"
+                        className="h-full w-full object-contain"
                       />
                     </div>
                   )}
@@ -127,12 +127,12 @@ export function CircleCategories({
         <div className="flex flex-wrap items-center justify-between gap-4 mb-5">
           <div className="flex items-center gap-3.5">
             <div className="h-11 w-11 overflow-hidden rounded-full bg-gradient-to-tr from-yellow-400 via-amber-400 to-yellow-300 p-[2px] shrink-0">
-              <div className="h-full w-full overflow-hidden rounded-full bg-white dark:bg-[#17130B]">
+              <div className="h-full w-full overflow-hidden rounded-full bg-white p-1">
                 <SafeImage
                   src={VJ_SIDDHU_LOGO_URL}
                   fallbackSrc={categories[0]?.fallbackImage}
-                  alt="VJ Siddhu Vlogs Original Logo"
-                  className="h-full w-full object-cover"
+                  alt="VJ Siddhu Max Logo"
+                  className="h-full w-full object-contain"
                 />
               </div>
             </div>
