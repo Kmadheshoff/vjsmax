@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="vjsYellowGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="52%" stop-color="#FACC15" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="vjsDarkGrad" x1="120" y1="120" x2="392" y2="392" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#292008" />
+      <stop offset="100%" stop-color="#140F03" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#vjsYellowGrad)" />
+  <circle cx="256" cy="256" r="144" fill="url(#vjsDarkGrad)" />
+  <circle cx="256" cy="256" r="144" stroke="#FEF9E7" stroke-opacity="0.25" stroke-width="6" />
+  <path d="M218 190.5C218 182.2 227.1 177.1 234.2 181.4L333.8 242.9C340.6 247.1 340.6 256.9 333.8 261.1L234.2 322.6C227.1 326.9 218 321.8 218 313.5V190.5Z" fill="#FACC15" />
+</svg>

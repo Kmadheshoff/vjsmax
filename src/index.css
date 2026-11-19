@@ -1,0 +1,124 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FFFDF7;
+    color: #1A1404;
+    font-family: var(--font-sans);
+  }
+
+  html.dark {
+    background-color: #0D0B07;
+    color: #FEF9E7;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Hide scrollbars globally while preserving smooth scroll across all viewports */
+html,
+body,
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Volumetric purple cinema smoke drift (compositor-only transforms & opacity) */
+@keyframes smokeDriftA {
+  0% {
+    transform: translate3d(-6%, 4%, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(5%, -4%, 0) scale(1.08);
+    opacity: 0.78;
+  }
+  100% {
+    transform: translate3d(-6%, 4%, 0) scale(1);
+    opacity: 0.55;
+  }
+}
+
+@keyframes smokeDriftB {
+  0% {
+    transform: translate3d(6%, -3%, 0) scale(1.05);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate3d(-5%, 5%, 0) scale(0.96);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate3d(6%, -3%, 0) scale(1.05);
+    opacity: 0.45;
+  }
+}
+
+.animate-smoke-a {
+  animation: smokeDriftA 14s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-smoke-b {
+  animation: smokeDriftB 18s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Netflix / Aha Top 10 architectural gold-yellow outline numerals */
+.top-rank-numeral {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+  color: #FFFDF7;
+  -webkit-text-stroke: 2.5px rgba(202, 138, 4, 0.88);
+  text-shadow: 0 12px 28px rgba(161, 98, 7, 0.16);
+}
+
+.group:hover .top-rank-numeral {
+  -webkit-text-stroke: 2.5px #B45309;
+}
+
+.dark .top-rank-numeral {
+  color: #0D0B07;
+  -webkit-text-stroke: 2.5px rgba(250, 204, 21, 0.85);
+  text-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
+}
+
+.dark .group:hover .top-rank-numeral {
+  -webkit-text-stroke: 2.5px #FDE047;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-smoke-a,
+  .animate-smoke-b {
+    animation: none;
+  }
+}

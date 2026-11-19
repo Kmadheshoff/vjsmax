@@ -1,0 +1,6 @@
+{
+  "name": "trend media",
+  "description": "Stream VJ Siddhu Vlogs, Mottamaadi Party, VJ Siddhu Virundhu, and exclusive travel series on trend media.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
